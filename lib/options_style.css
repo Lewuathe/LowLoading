@@ -1,0 +1,131 @@
+body{    
+    background-color: white;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 75%;
+    color: #222222;
+}
+
+
+nav{
+    position: absolute;
+    background-color: #EDEDED;
+    background-image: linear-gradient(top, #EDEDED, #F5F5F5);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left 500,
+        color-stop(0, #EDEDED),
+        color-stop(1, #F5F5F5)
+    );
+    background-image: -moz-linear-gradient(
+        center top,
+        #EDEDED 0%,
+        #F5F5F5 100%
+    );
+    background-image: -o-linear-gradient(top, #EDEDED, #F5F5F5);
+    width: 219px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid #C2C2C2;
+    box-shadow: inset -8px 0 30px -30px black;
+    overflow : hidden;
+
+}
+
+div.item-area{
+    position : relative;
+    top : 30px;
+}
+
+div.nav-content{
+   position : relative;
+   margin-top : 15px;
+   left : 0px;
+   padding-left : 50px;
+   padding-top : 5px;
+   padding-bottom : 5px;
+   font-size : 15pt;
+   border : 1px solid transparent;
+   text-shadow : 1px 1px 2px #FA1;
+}
+
+div.nav-content:hover{
+    background-color : #A9A9A9;
+    border : 1px solid #696969;
+}
+
+article{
+    position: absolute;
+    top: 0;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+div.icon-area{
+    position : relative;
+    top : 15px;
+    left : 20px;
+}
+
+img.main-icon{
+    position : relative;
+}
+
+div.setting-contents{
+    visibility : visible;
+}
+
+div.information-contents{
+    visibility : hidden;
+}
+
+div.information-contents #info-explanation{
+    position : relative;
+    left : 30px;
+    top : 20px;
+    width : 600px;
+}
+
+div.information-contents , div.setting-contents{
+    position : absolute;
+    top : 20px;
+    left : 20px;
+    right : 0px;
+    font-size : 11pt;
+}
+
+div.content-title{
+    position : relative;
+    left : 20px;
+    margin-right : 200px;
+    padding-bottom : 10px;
+    font-size : 20pt;
+    border-bottom : 1px solid #EDEDED;
+}
+
+
+
+div#account{
+    position : relative;
+    top : 20px;
+    left : 20px;
+}
+
+div#account input{
+    position : relative;
+    left : 30px;
+}
+div#account #registeredPassConfirm{
+    left : 45px;
+}
+div#account #register, #changeAccount, #addAccount, #changeAccountSubmit{
+    top : 10px;
+}
+div#account #explanation{
+    position : relative;
+    top : 10px;
+    width : 500px;
+}

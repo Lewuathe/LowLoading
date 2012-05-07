@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <title>アカウント設定</title>
+  <script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="lib/storage.js"></script>
+  <script type="text/javascript" src="lib/options.js"></script>
+  <link rel="stylesheet" href="lib/options_style.css" type="text/css" />
+
+</head>
+<nav>
+  <div class="icon-area">
+    <img src="img/icon_128.png" class="main-icon"/>
+  </div>
+  <div class="item-area">
+    <div class="nav-content" id="information">Information</div>
+    <div class="nav-content" id="setting">Setting</div>
+  </div>
+</nav>
+<article>
+  
+  <div class="information-contents">
+    <div class="content-title">Information</div>
+  </div>
+
+  <div class="setting-contents">
+    <div class="content-title">Setting</div>
+    <div id="account"></div>
+    <div id="change_area"><div>
+  </div>
+</article>
+</body>
+
+</html>

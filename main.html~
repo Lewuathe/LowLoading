@@ -1,0 +1,24 @@
+尾o<!DOCTYPE html>
+
+<head>
+  <title>LowLoading</title>
+  <script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      setInterval(printPoint,1000);
+    });
+    function printPoint(){
+      var bp = chrome.extension.getBackgroundPage();
+      var point = bp.getPoint();
+      $("span#point").text(point);
+    }
+  </script>
+</head>
+
+<body>
+  This is LowLoading<br>
+  <span id="point" ></span>
+</body>
+
+</html>
+

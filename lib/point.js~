@@ -1,0 +1,40 @@
+var point = {};
+
+point.startTime = null;
+point.compTime = null;
+
+point.init = function(){
+    
+}
+
+
+point.calc = function(tab){
+    if(!point.startTime && tab.status != 'complete'){
+	point.startTime = new Date();
+    }
+    else if(point.startTime && tab.status == 'complete'){
+	point.compTime = new Date();
+    }
+    if(point.compTime && point.startTime){
+	var addedPoint = point.algorithm(point.startTime,point.compTime);
+	var currentPoint = storage.getPointOfCurrentAccount();
+	storage.setPointOfCurrentAccount(addedPoint+currentPoint);
+	point.startTime = null;
+	point.compTime = null;
+    }
+}
+
+point.algorithm = function(startTime,compTime){
+    var loadTime = compTime.getTime() - startTime.getTime(); 
+    if(loadTime < 3000){
+	return 0;
+    }
+    else if(loadTime < 10000){
+	return parseInt(loadTime/1000-3);
+    }
+    else{
+	return 0;
+    }
+}
+
+
